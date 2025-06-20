@@ -3,9 +3,9 @@ const TelegramBot = require('node-telegram-bot-api');
 const axios = require('axios');
 const fs = require('fs');
 
-const token = '7194536028:AAHP5LE4oygs5tBND3wdNb2Ym4yw1htATDc';
+const token = '';
 
-const bot = new TelegramBot(token, { polling: true });
+const bot = new TelegramBot(process.env.BOT_TOKEN, { polling: true });
 
 let lastPriceBTC = null;
 let lastPriceTON = null;
